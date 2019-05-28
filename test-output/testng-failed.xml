@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Testing Cross Browser]" parallel="tests">
+  <test thread-count="3" name="Test Safari(failed)" parallel="tests">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="LoginFunctionsTest.NewTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="etsyLogin"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- LoginFunctionsTest.NewTest -->
+    </classes>
+  </test> <!-- Test Safari(failed) -->
+</suite> <!-- Failed suite [Testing Cross Browser] -->
